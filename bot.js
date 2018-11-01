@@ -411,13 +411,13 @@ client.on("message", message => {
  if (message.content === ".help") {
   const embed = new Discord.RichEmbed()  
       .setColor("RANDOM")
-      .setDescription(`**
+      .setDescription(`
      
              Please Select Your Language
 ${prefix}help-ar
 ${prefix}help-en
              
-      **`)
+      `)
    message.channel.sendEmbed(embed)
    
    }
@@ -427,7 +427,7 @@ ${prefix}help-en
  if (message.content === ".help-ar") {
   const embed = new Discord.RichEmbed()  
       .setColor("RANDOM")
-      .setDescription(`**
+      .setDescription(`
      
             اختر:
  
@@ -436,7 +436,7 @@ ${prefix}help-en
 .help-ad-ar  ⇏ اوامر ادارة السيرفر
              
 .help-mu-ar  ⇏ اوامر الموسيقى
-**`)
+`)
 message.channel.sendEmbed(embed)
  
 }
@@ -446,7 +446,7 @@ client.on("message", message => {
     if (message.content === ".help-en") {
      const embed = new Discord.RichEmbed()  
          .setColor("RANDOM")
-         .setDescription(`**
+         .setDescription(`
          
               Chose:
                
@@ -457,7 +457,7 @@ client.on("message", message => {
    .help-mu-en  ⇏ Music commands
    
    
- **`)
+   `)
    message.channel.sendEmbed(embed)
    
    }
@@ -469,7 +469,7 @@ client.on("message", message => {
      message.channel.send('**تم ارسال رسالة في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setDescription('
+      .setDescription(`
              
 ===================== اوامر عامة =====================
 .id  ➾ معلومات عن حسابك
@@ -478,12 +478,12 @@ client.on("message", message => {
 .bot ➾ معلومات عن البوت
 .ping  ➾ لمعرفة سرعة نتك
 .trg ➾ لعبة ترجمه
-.say  ➾ Repeat your words
+.say ➾
 =========================================================
 وقريباً المزيد من الاكواد
 =========================================================
 Support server : https://discord.gg/xTK8jku
-')
+`)
    message.author.sendEmbed(embed)
    
    }
@@ -499,7 +499,7 @@ Support server : https://discord.gg/xTK8jku
      message.channel.send('**Check your dm** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setDescription('
+      .setDescription(`
              
 ==================== General commands =====================
 .id ➾ your informations
@@ -508,12 +508,12 @@ Support server : https://discord.gg/xTK8jku
 .server ➾ server informations
 .bot ➾ bot informations
 .trg ➾ traduction game
-.say  ➾ Repeat your words
+.say ➾ the bot say your message
 =========================================================
 More commands soon
 =========================================================
 Support server : https://discord.gg/xTK8jku
-')
+`)
    message.author.sendEmbed(embed)
    
    }
@@ -525,9 +525,10 @@ Support server : https://discord.gg/xTK8jku
      message.channel.send('**تم ارسال رسالة بالخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setDescription('
+      .setDescription(`
              
 ==================== اوامر ادارية =====================
+.bc ➾ لارسال رساله لجميع الاعضاء
 .ban [@mention] [reason] ➾  لحظر شخص من السيرفر
 .kick [@mention] [reason] ➾ لطرد شخص من السيرفر
 .mute  [@mention] [reason] ➾ لاعطاء ميوت لعضو
@@ -535,14 +536,14 @@ Support server : https://discord.gg/xTK8jku
 .move [@mention] ➾ لنقل عضو لرومك الصوتي
 .mutechannel ➾ لاقفال الشات
 .unmutechannel ➾ لفتح الشات
+.delete #channel ➾ لمحو الشات
 .clear  ➾ لمسح الشات
 .role [@mention] [role name] ➾ لاعطاء رتبة لعضو
-.counter ➾ يصنع عداد لاعضاء السرفر على شكل روم صوتي
 =========================================================
 وقريباً المزيد من الاكواد
 =========================================================
-Support server :  https://discord.gg/sjHQUj
-')
+Support server :  https://discord.gg/xTK8jku
+`)
    message.author.sendEmbed(embed)
    
 }
@@ -554,9 +555,10 @@ if (message.content === ".help-ad-en") {
   message.channel.send('**Check your dm** :mailbox_with_mail: ');
 const embed = new Discord.RichEmbed()
    .setColor("RANDOM")
-   .setDescription('
+   .setDescription(`
          
 ==================== Management commands =====================
+.bc ➾ for massage send message to server members
 .ban [@mention] [reason] ➾ to ban someone from the server
 .kick [@mention] [reason] ➾ to kick someone from the server
 .mute [@mention] [reason] ➾ to mute someone
@@ -564,14 +566,14 @@ const embed = new Discord.RichEmbed()
 .move [@mention] ➾ to move someone to your channel
 .mutechannel ➾ to mute chat
 .unmutechannel ➾ to ummute chat
+.delete #channel ➾ to delete chat
 .clear ➾ to clear chat
-.role [@mention] [role name] ➾ to give role
-.Counter ➾ make voice room show you server members
+.role [@mention] [role name] ➾ to give role fo someone
 =========================================================
 More commands soon
 =========================================================
-Support server :  https://discord.gg/xTK8jku
-')
+Support server : https://discord.gg/xTK8jku
+`)
 message.author.sendEmbed(embed)
  
 }
@@ -584,7 +586,7 @@ client.on("message", message => {
      message.channel.send('**تم ارسال رسالة بالخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setDescription('
+      .setDescription(`
              
 ==================== اوامر الميوزك =====================
 1play ➾ لتشغيل اغنية
@@ -598,7 +600,7 @@ client.on("message", message => {
 وقريباً المزيد من الاكواد
 =========================================================
 Support server : https://discord.gg/xTK8jku
-')
+`)
    message.author.sendEmbed(embed)
    
 }
@@ -611,7 +613,7 @@ client.on("message", message => {
      message.channel.send('**Check your dm** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setDescription('**
+      .setDescription(`
              
 ==================== Music commands =====================
 1play ➾ to play song
@@ -620,15 +622,17 @@ client.on("message", message => {
 1stop ➾ top remove the bot from room
 1np ➾ to show the song that is currently playing
 1queue ➾ to see the song list
+ 
 =========================================================
 More codes soon
 =========================================================
-Support server :  https ://discord.gg/xTK8jku
-**')
+Support server : https://discord.gg/xTK8jku
+`)
    message.author.sendEmbed(embed)
    
 }
 });
+
 
 client.on('message', message => {
    
