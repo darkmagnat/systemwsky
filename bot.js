@@ -478,6 +478,7 @@ client.on("message", message => {
 .bot ➾ معلومات عن البوت
 .ping  ➾ لمعرفة سرعة نتك
 .trg ➾ لعبة ترجمه
+.say  ➾ Repeat your words
 =========================================================
 وقريباً المزيد من الاكواد
 =========================================================
@@ -507,6 +508,7 @@ Support server : https://discord.gg/xTK8jku
 .server ➾ server informations
 .bot ➾ bot informations
 .trg ➾ traduction game
+.say  ➾ Repeat your words
 =========================================================
 More commands soon
 =========================================================
@@ -536,7 +538,6 @@ Support server : https://discord.gg/xTK8jku
 .clear  ➾ لمسح الشات
 .role [@mention] [role name] ➾ لاعطاء رتبة لعضو
 .counter ➾ يصنع عداد لاعضاء السرفر على شكل روم صوتي
-.say ➾ البوت يكرر كلامك
 =========================================================
 وقريباً المزيد من الاكواد
 =========================================================
@@ -566,7 +567,6 @@ const embed = new Discord.RichEmbed()
 .clear ➾ to clear chat
 .role [@mention] [role name] ➾ to give role
 .Counter ➾ make voice room show you server members
-.say  ➾ Repeat your words
 =========================================================
 More commands soon
 =========================================================
@@ -611,7 +611,7 @@ client.on("message", message => {
      message.channel.send('**Check your dm** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setDescription(**
+      .setDescription('**
              
 ==================== Music commands =====================
 1play ➾ to play song
@@ -623,8 +623,8 @@ client.on("message", message => {
 =========================================================
 More codes soon
 =========================================================
-Support server : https://discord.gg/xTK8jku
-**)
+Support server :  https ://discord.gg/xTK8jku
+**')
    message.author.sendEmbed(embed)
    
 }
