@@ -217,7 +217,7 @@ client.on('message', m => {
 });
 
 client.on("message", (Duy0) => {
-  if (Duy0.content.startsWith('!!delete')) {
+  if (Duy0.content.startsWith('.delete')) {
       if (!Duy0.member.hasPermission('MANAGE_CHANNELS')) return Duy0.reply("انت لا تمتلك صلاحيه ``Manage_Channels`` لكي تقوم بحذف الروم");
       if(!Duy0.guild.member(client.user).hasPermission("MANAGE_MESSAGES")) return message.reply("انا لا امتلك صلايه ``Manage_Channels`` لكي اقوم بحذف الروم");
 
@@ -936,7 +936,7 @@ client.on('message', message => {
 });
 
 client.on('message', message =>{
-    if(message.content === '!!ping'){
+    if(message.content === '.ping'){
 let start = Date.now(); message.channel.send('pong').then(message => { 
 message.edit(`\`\`\`js
 Time taken: ${Date.now() - start} ms
@@ -946,7 +946,7 @@ Discord API: ${client.ping.toFixed(0)} ms\`\`\``);
 });
 
 client.on('message', msg => {
- if(msg.content === "&bot") {
+ if(msg.content === ".bot") {
 let embed24 = new Discord.RichEmbed()   
    .setThumbnail(client.user.avatarURL)
    .setColor("RANDOM")  
@@ -978,7 +978,7 @@ var tr =[
  
 const UserBlocked = new Set();  
 client.on("message", async message => {
-   var prefix = "&";
+   var prefix = ".";
 if(message.content == prefix+"trg"){
     if(UserBlocked.has(message.guild.id)) return message.channel.send("هناك جلسة .")
     UserBlocked.add(message.guild.id)
@@ -1018,7 +1018,7 @@ if(message.content == prefix+"trg"){
 
 client.on("message", async message => {
         if(!message.channel.guild) return;
- var prefix= "&";
+ var prefix= ".";
         if(message.content.startsWith(prefix + 'server')) {
         let guild = message.guild
         let channel = message.channel
