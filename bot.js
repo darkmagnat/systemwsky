@@ -469,7 +469,7 @@ client.on("message", message => {
      message.channel.send('**تم ارسال رسالة في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setDescription(**
+      .setDescription('
              
 ===================== اوامر عامة =====================
 .id  ➾ معلومات عن حسابك
@@ -483,7 +483,7 @@ client.on("message", message => {
 وقريباً المزيد من الاكواد
 =========================================================
 Support server : https://discord.gg/xTK8jku
-**)
+')
    message.author.sendEmbed(embed)
    
    }
@@ -499,7 +499,7 @@ Support server : https://discord.gg/xTK8jku
      message.channel.send('**Check your dm** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setDescription(**
+      .setDescription('
              
 ==================== General commands =====================
 .id ➾ your informations
@@ -513,7 +513,7 @@ Support server : https://discord.gg/xTK8jku
 More commands soon
 =========================================================
 Support server : https://discord.gg/xTK8jku
-**)
+')
    message.author.sendEmbed(embed)
    
    }
@@ -525,7 +525,7 @@ Support server : https://discord.gg/xTK8jku
      message.channel.send('**تم ارسال رسالة بالخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setDescription(**
+      .setDescription('
              
 ==================== اوامر ادارية =====================
 .ban [@mention] [reason] ➾  لحظر شخص من السيرفر
@@ -542,7 +542,7 @@ Support server : https://discord.gg/xTK8jku
 وقريباً المزيد من الاكواد
 =========================================================
 Support server :  https://discord.gg/sjHQUj
-**)
+')
    message.author.sendEmbed(embed)
    
 }
@@ -554,7 +554,7 @@ if (message.content === ".help-ad-en") {
   message.channel.send('**Check your dm** :mailbox_with_mail: ');
 const embed = new Discord.RichEmbed()
    .setColor("RANDOM")
-   .setDescription(**
+   .setDescription('
          
 ==================== Management commands =====================
 .ban [@mention] [reason] ➾ to ban someone from the server
@@ -570,8 +570,8 @@ const embed = new Discord.RichEmbed()
 =========================================================
 More commands soon
 =========================================================
-Support server : https://discord.gg/xTK8jku
-**)
+Support server :  https://discord.gg/xTK8jku
+')
 message.author.sendEmbed(embed)
  
 }
@@ -584,7 +584,7 @@ client.on("message", message => {
      message.channel.send('**تم ارسال رسالة بالخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setDescription(**
+      .setDescription('
              
 ==================== اوامر الميوزك =====================
 1play ➾ لتشغيل اغنية
@@ -598,7 +598,7 @@ client.on("message", message => {
 وقريباً المزيد من الاكواد
 =========================================================
 Support server : https://discord.gg/xTK8jku
-**)
+')
    message.author.sendEmbed(embed)
    
 }
